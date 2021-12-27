@@ -1,0 +1,125 @@
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+  }
+  body{
+    font-family: 'Quicksand', sans-serif;
+    font-weight:400px;
+    height:100%;
+    line-height:1.5;
+  }
+  
+  #navbar{
+    background-color:#b30000;
+    display:flex;
+    width:100%;
+    position:fixed;
+    align-items:center;
+    justify-content:flex-end;
+    colour:white;
+    
+  }
+  #navbar ul {
+    list-style:none;
+    display:flex;
+    font-size:20px;
+    
+  }
+  #navbar a{
+    text-decoration:none;
+    padding:2.2rem;
+    color:white;
+  }
+  #navbar a :hover{
+    background-color: #001a33;
+  }
+  #navbar li{
+    display:flex;
+  }
+  
+  #welcome-section{
+    background-color:#1f1f14;
+    color:white;
+    height:400px;
+    align-items:center;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    font-size:2rem
+  }
+  #welcome-section p{
+    color:#b30000;
+    
+  }
+  #projects{
+    background-color:#004080;
+    color:white;
+    padding:10rem 2rem;
+    align-items:center;
+    font-size:2rem;
+    
+  }
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 4rem;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+  }
+  #header{
+    border-bottom: 2px solid white;
+    margin: 0 auto 6rem auto;
+    max-width:500px;
+    text-align: center;
+  }
+  .grid img {
+    height:300px;
+    width:100%;
+    object-fit:cover;
+  }
+  
+  #contact{
+    background-color:#001a33;
+    display:flex;
+    color:white;
+    align-items:center;
+    text-align:center;
+    justify-content:center;
+    padding:10px;
+    flex-direction:column;
+    height:600px;
+    
+  }
+  #contact-me{
+    font-size:2rem;
+    
+   
+  }
+  
+  #icon{
+    flex-wrap: wrap;
+    margin-top: 40px;
+    display:flex;
+    justify-content:center;
+  }
+  #icon a{
+    text-decoration:none;
+    color:white;
+    padding: 10px 20px;
+   
+    
+  }
+  footer{
+    background-color:#001a33;
+    display:flex;
+    color:white;
+    border-top:2px solid #b30000;
+    justify-content:space-evenly;
+    height:100px;
+    padding:30px;
+  }
+  
+  
+  
