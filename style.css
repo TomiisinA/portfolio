@@ -69,3 +69,12 @@ a, .btn {
   display: inline-block;
   position: relative;
  }
+
+ .hamburger-icon{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+ }
