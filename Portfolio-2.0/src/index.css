@@ -1,5 +1,128 @@
-@import "tailwindcss"; 
+@import "tailwindcss";
 
-/* @theme{
---color-background:
-} */
+@theme {
+  --color-background-dark: #0f1418;
+  --color-background-light: #ffffff;
+
+  --color-foreground-light: #0f1729;
+  --color-foreground-dark: #e1e7ef;
+
+   --color-primary: #7969c9;
+  /* --color-foreground: #f0f2f5; */
+
+  /* --color-card-light: #ffffff;
+  --color-card-dark: #0b111e;
+
+  --color-primary-light: #7969c9;
+  --color-primary-dark: #7969c9; */
+
+  /* --color-primary-foreground-light: #ffffff;
+  --color-primary-foreground-dark: #e1e7ef; */
+
+  --color-secondary: #1f2830;
+  --color-secondary-foreground: #20b2a6;
+
+  --color-muted: #252e37;
+  --color-muted-foreground: #7a8491;
+
+  --color-border-light: #e1e7ef;
+  --color-border-dark: #222f44;
+
+  --radius: 0.75rem;
+
+  --color-highlight: #a78bfa;
+  --color-surface: #1a2329;
+}
+
+@layer base {
+  :root {
+    --background:  #ffffff;
+    --foreground: #000000;
+    --card: #ffffff;
+    --primary:#7969c9;
+    --primary-foreground: #ffffff;
+    --border:  #e1e7ef;
+  }
+
+  .dark {
+    --background: #0f1418;
+    --foreground:#e1e7ef;
+    --card: #0b111e;
+    --primary: #7969c9;
+    --primary-foreground: #e1e7ef;
+    --border: #222f44;
+  }
+
+  body {
+    color: var(--foreground);
+    background-color: var(--background);
+  }
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 2rem;
+
+  @media (width >= 640px) {
+    max-width: 640px;
+  }
+
+  @media (width >= 768px) {
+    max-width: 768px;
+  }
+
+  @media (width >= 1024px) {
+    max-width: 1024px;
+  }
+  @media (width >= 1280px) {
+    max-width: 1280px;
+  }
+}
+
+@utility card {
+  background-color: var(--card);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.1),
+    0 1px 2px rgba(0, 0, 0, 0.06);
+}
+@utility card-hover{
+  @apply transition-transform duration-300 hover:scale-105 hover:shadow-lg;
+  text-shadow: 0 0 10px var(--color-primary-dark); 
+}
+
+@utility btn {
+  /* background-color: var(--color-primary); */
+  color: var(--color-primary-foreground);
+  padding: 0.125rem 0.5rem;
+  border-radius: var(--radius);
+  font-weight: 300;
+  transition: background-color 0.3s ease;
+  border: 1px solid ;
+
+&:hover {
+    background-color:  #000000;
+    color: #ffffff;
+  }
+}
+
+@utility gradient-border {
+  @apply relative rounded-md;
+  background: linear-gradient(
+    90deg,
+    var(--color-primary-dark),
+    var(--color-foreground-dark)
+  );
+  border-radius: var(--radius);
+  padding: 2px;
+  background-clip: padding-box, border-box;
+  border: 2px solid transparent;
+}
+
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
