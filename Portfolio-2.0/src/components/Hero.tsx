@@ -1,4 +1,3 @@
-import { ChevronDown } from "lucide-react";
 import { Icon } from "@iconify/react";
 
 export const Hero = () => {
@@ -9,7 +8,7 @@ export const Hero = () => {
     >
       <div className="container max-w-4xl mx-auto z-10  items-center text-center ">
         <div className="space-y-6 ">
-          <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
+          <h1 className="text-4xl md:text-7xl font-bold tracking-tight">
             <span> Hi,</span> <br />
             <span> I'm </span>
             <span>Oluwatomisin Ajayi</span>
@@ -17,28 +16,21 @@ export const Hero = () => {
           <p className="text-lg md:text-xl text-muted-foreground/90 max-w-2xl mx-auto animate-fadeInUp animation-delay-500">
             I build functional and efficient web applications using React,
             Next.js, and TypeScript, focusing on clean code and practical
-            solutions..
+            solutions.
           </p>
-          <div className=" gap-4 flex justify-center animate-fadeInUp animation-delay-1000">
+          <div className=" gap-4 flex justify-center animate-fadeInUp animation-delay-1000 mb-0 pt-4">
             <a href="http://">
-              <Icon icon="mdi:linkedin" width="24" height="24" />
+              <Icon icon="mdi:linkedin" width="35" height="35" />
             </a>
-            {/* {" "}
-            <a href="" className="btn ">
+            <a href="">
               {" "}
-              Resume{" "}
-            </a>{" "}
-            <a href="" className="btn">
-              {" "}
-              Contact Me{" "}
-            </a>{" "} */}
+              <Icon icon="mdi:github" width="35" height="35" />
+            </a>
+            <a href="">
+               <Icon icon="material-symbols:mail-outline" width="35" height="35" /> 
+            </a>
           </div>
         </div>
-      </div>
-
-      <div className="absolute -bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce flex flex-col items-center ">
-        {/* <span className="text-sm">Scroll</span> */}
-        <ChevronDown className="w-4 h-4 text-foreground" />
       </div>
     </section>
   );

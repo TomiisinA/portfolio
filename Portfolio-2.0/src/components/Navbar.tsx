@@ -1,14 +1,16 @@
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
+import { ThemeToggle } from "./ThemeToggle";
 
 const navItems = [
   {
     name: "Home",
     href: "#hero",
   },
-  { name: "About", href: "#about" },
-  { name: "Skills", href: "#skills" },
   { name: "Projects", href: "#projects" },
+  { name: "About", href: "#about" },
+  { name: "Resume", href: "#skills" },
+
   { name: "Contact", href: "#contact" },
 ];
 
@@ -27,34 +29,45 @@ export const Navbar = () => {
 
   return (
     <nav
-      className={` fixed w-full z-40 transition-all duration-300 ${isScrolled ? "bg-background-light/80 shadow-md py-3 backdrop-blur-md" : "py-5 bg-transparent"}`}
+      className={` fixed w-full z-40 transition-all duration-300 ${isScrolled ? "bg-background-light/50 shadow-md py-3 backdrop-blur-md" : "py-5 bg-transparent"}`}
     >
       <div className="container flex items-center justify-between">
-        <a href="#home" className="text-xl font-bold text-primary flex items-center">
+        <a href="#home" className="text-xl font-bold flex items-center">
           <span className="relative z-10">
-            <span className="font-bold text-xl text-foreground">Oluwatomisin</span> Ajayi
+            <span className="font-bold text-xl text-foreground text-[#e6e3e3] ">
+              Oluwatomisin
+            </span>{" "}
+            Ajayi
           </span>
         </a>
 
         {/* desktop */}
 
         <div className="hidden md:flex space-x-8">
-          {navItems.map((item,key) => (
+          {navItems.map((item, key) => (
             <a
               key={key}
               href={item.href}
-              className="text-sm font-medium hover:text-blue-500 transition-colors duration-300 text-foreground/80"
+              className="text-md font-medium hover:text-blue-500 transition-colors duration-300 text-foreground/80"
             >
               {item.name}
             </a>
           ))}
+          <ThemeToggle />
         </div>
 
         {/* mobile */}
 
-        <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="md:hidden p-2 text-foreground z-50"
-          aria-label="">
-          {isMenuOpen ? <X className="w-6 h-6 text-foreground" /> : <Menu className="w-6 h-6 text-foreground" />}
+        <button
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className="md:hidden p-2 text-foreground z-50"
+          aria-label=""
+        >
+          {isMenuOpen ? (
+            <X className="w-6 h-6 text-foreground" />
+          ) : (
+            <Menu className="w-6 h-6 text-foreground" />
+          )}
         </button>
         <div
           className={`fixed inset-0 bg-background/95 backdrop-blur-md z-40 flex flex-col items-center justify-center transition-all duration-300 md:hidden ${isMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}

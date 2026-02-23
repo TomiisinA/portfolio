@@ -41,12 +41,39 @@ const projects: Projects[] = [
     link: "https://example.com/project3",
     github: "",
   },
+  {
+    id: 4,
+    name: "Project 4",
+    description: "Description of project 4",
+    image: fine,
+    tags: ["React", "Next.js"],
+    link: "https://example.com/project4",
+    github: "",
+  },
+  {
+    id: 5,
+    name: "Project 5",
+    description: "Description of project 5",
+    image: beb,
+    tags: ["React", "GraphQL"],
+    link: "https://example.com/project5",
+    github: "",
+  },
+  {
+    id: 6,
+    name: "Project 6",
+    description: "Description of project 6",  
+    image: pics,
+    tags: ["React", "Redux"],
+    link: "https://example.com/project6",
+    github: "",
+  },
 ];
 
 export const Projects = () => {
   return (
     <section id="projects" className="py-24 px-4 relative">
-      <div className="container mx-auto max-w-5xl">
+      <div className="container mx-auto max-w-6xl">
         <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center">
           Projects
         </h2>
@@ -54,7 +81,7 @@ export const Projects = () => {
           {projects.map((project, key) => (
             <div
               key={key}
-              className="group bg-card rounded-lg overflow-hidden shadow-xs "
+              className="group border  p-4 rounded-lg overflow-hidden shadow-xs "
             >
               <div className=" h-48  overflow-hidden">
                 <img
@@ -63,10 +90,13 @@ export const Projects = () => {
                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                 />
               </div>
-              <div className="p-6">
+              <div className="py-3">
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag) => (
-                    <span className="bg-primary text-xs font-medium px-2 py-1 border rounded-full text-secondary-foreground">
+                    <span
+                      className="bg-primary text-xs font-medium px-2 py-1 border rounded-sm text-white"
+                      key={tag}
+                    >
                       {tag}
                     </span>
                   ))}
@@ -78,20 +108,28 @@ export const Projects = () => {
               </p>
               <div className="flex justify-between items-center">
                 <div className="flex space-x-3">
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <ExternalLink size={20} className="w-5 h-5 text-primary hover:text-secondary" />
-                  </a>
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Github className="w-5 h-5 text-primary hover:text-secondary" />
-                  </a>
+                  <div className="flex border rounded-md px-2 py-1 items-center gap-1 bg-primary/10  hover:text-secondary">
+                    <p> Live Demo</p>
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="cursor "
+                    >
+                      <ExternalLink size={20} className="w-4 h-4" />
+                    </a>
+                  </div>
+                  <div className="flex border rounded-md px-2 py-1 items-center gap-1 bg-primary/10">
+                    <p>GitHub</p>
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="cursor"
+                    >
+                      <Github className="w-5 h-5 hover:text-secondary" />
+                    </a>{" "}
+                  </div>
                 </div>
               </div>
             </div>
