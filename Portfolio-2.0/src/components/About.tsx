@@ -6,18 +6,21 @@ export const About = () => {
       <div className="container  mx-auto max-w-6xl ">
         <h2 className="text-4xl md:text-5xl font-bold mb-4">About</h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 items-center justify-between ">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center justify-between ">
           {/* left side */}
-          <div className="flex-1 space-y-6 text-left ">
+          <div className=" space-y-6 text-left ">
             <p className="text-xl text-muted-foreground text-left ">
-              I have a strong background in JavaScript and React, and I'm always
-              eager to learn new technologies and improve my skills. <br /> I
-              enjoy working on projects that challenge me and allow me to grow
-              as a developer. In my free time, I like to contribute to
-              open-source projects and stay up-to-date with the latest trends in
-              web development.
+              I’m a frontend developer focused on building scalable, responsive
+              web applications using React and TypeScript. I care deeply about
+              clean architecture, maintainable code, and intuitive user
+              interfaces.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-start">
+            <p className="text-xl text-muted-foreground leading-relaxed">
+              Currently, I’m strengthening my expertise in API integration,
+              performance optimization, and modern frontend workflows while
+              continuously improving my engineering depth.
+            </p>
+            <div className="flex flex-wrap gap-4 pt-4 justify-start">
               <a href="#contact" className="btn rounded-md font-semibold">
                 Contact Me
               </a>
@@ -29,11 +32,11 @@ export const About = () => {
 
           {/* right side */}
 
-          <div className="flex-1 flex justify-center rounded-xl overflow-hidden">
+          <div className="flex justify-center md:justify-end">
             <img
               src={image}
               alt="Oluwatomisin Ajayi"
-              className="w-100 md:w-50  object-contain"
+              className="w-full max-w-md md:max-w-xs rounded-2xl object-cover"
             />
           </div>
         </div>

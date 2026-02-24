@@ -16,12 +16,12 @@ interface Projects {
 const projects: Projects[] = [
   {
     id: 1,
-    name: "Project 1",
+    name: "Lama Estate",
     description: "Description of project 1",
     image: beb,
     tags: ["React", "TypeScript"],
-    link: "https://example.com/project1",
-    github: "",
+    link: "https://lamarealestatesite.netlify.app/",
+    github: "https://github.com/TomiisinA/Lama-Real-estate",
   },
   {
     id: 2,
@@ -62,7 +62,7 @@ const projects: Projects[] = [
   {
     id: 6,
     name: "Project 6",
-    description: "Description of project 6",  
+    description: "Description of project 6",
     image: pics,
     tags: ["React", "Redux"],
     link: "https://example.com/project6",
@@ -74,7 +74,7 @@ export const Projects = () => {
   return (
     <section id="projects" className="py-24 px-4 relative">
       <div className="container mx-auto max-w-6xl">
-        <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center">
+        <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center">
           Projects
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

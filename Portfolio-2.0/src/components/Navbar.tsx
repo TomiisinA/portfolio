@@ -1,12 +1,13 @@
+import { Icon } from "@iconify/react";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
-import { ThemeToggle } from "./ThemeToggle";
+
 
 const navItems = [
-  {
-    name: "Home",
-    href: "#hero",
-  },
+  // {
+  //   name: "Home",
+  //   href: "#hero",
+  // },
   { name: "Projects", href: "#projects" },
   { name: "About", href: "#about" },
   { name: "Resume", href: "#skills" },
@@ -18,6 +19,7 @@ export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [active, setActive] = useState("home");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,32 +30,42 @@ export const Navbar = () => {
   }, []);
 
   return (
-    <nav
-      className={` fixed w-full z-40 transition-all duration-300 ${isScrolled ? "bg-background-light/50 shadow-md py-3 backdrop-blur-md" : "py-5 bg-transparent"}`}
-    >
-      <div className="container flex items-center justify-between">
-        <a href="#home" className="text-xl font-bold flex items-center">
-          <span className="relative z-10">
+    <nav className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-5xl">
+      <div
+        className={`container flex items-center justify-evenly px-8 py-4 transition-all duration-300  ${
+          isScrolled
+            ? "bg-transparent backdrop-blur-lg shadow-lg"
+            : "bg-background/40 backdrop-blur-md border-white/5"
+        }`}
+      >
+        <a href="#hero" className="text-xl font-bold flex items-center">
+          {/* <span className="relative z-10">
             <span className="font-bold text-xl text-foreground text-[#e6e3e3] ">
               Oluwatomisin
             </span>{" "}
             Ajayi
-          </span>
+          </span> */}
+
+          <Icon icon="ic:baseline-home" width="24" height="24" />
         </a>
 
         {/* desktop */}
 
-        <div className="hidden md:flex space-x-8">
+        <div className="hidden md:flex items-center gap-8 ">
           {navItems.map((item, key) => (
             <a
               key={key}
               href={item.href}
-              className="text-md font-medium hover:text-blue-500 transition-colors duration-300 text-foreground/80"
+              className={`relative transition ${
+                active === item.href.slice(1)
+                  ? "text-blue-500 hover:text-blue-600"
+                  : "text-foreground/70"
+              }`}
+              onClick={() => setActive(item.href.slice(1))}
             >
               {item.name}
             </a>
           ))}
-          <ThemeToggle />
         </div>
 
         {/* mobile */}

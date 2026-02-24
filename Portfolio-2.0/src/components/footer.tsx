@@ -17,7 +17,12 @@ export const Footer = () => {
           </div>
 
           <div className="flex gap-4 text-3xl">
-            <Icon icon="mdi:linkedin" width="35" height="35" className="contact-icon" />
+            <Icon
+              icon="mdi:linkedin"
+              width="35"
+              height="35"
+              className="contact-icon"
+            />
             <p>
               <a href="https://www.linkedin.com/in/ajayi-oluwatomisin/">
                 Ajayi Oluwatomisin
