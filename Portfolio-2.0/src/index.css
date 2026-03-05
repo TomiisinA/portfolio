@@ -86,11 +86,11 @@
 @utility btn {
   /* background-color: var(--color-primary); */
   color: var(--color-primary-foreground);
-  padding: 0.125rem 0.5rem;
+  padding: 0.5rem 0.5rem;
   /* border-radius: var(--radius); */
-  font-weight: 300;
+  font-weight: 400;
   transition: background-color 0.3s ease;
-  border: 2px solid;
+  border: 3px solid;
 
   &:hover {
     background-color: #000000;

@@ -1,4 +1,5 @@
-import image from "../assets/images/profile.jpeg";
+import image from "../assets/images/Myprofile.png";
+import resume from "../../public/Oluwatomisin Ajayi CV (1).pdf";
 
 export const About = () => {
   return (
@@ -9,22 +10,29 @@ export const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center justify-between ">
           {/* left side */}
           <div className=" space-y-6 text-left ">
-            <p className="text-xl text-muted-foreground text-left ">
+            <p className="text-2xl text-muted-foreground text-left ">
               I’m a frontend developer focused on building scalable, responsive
               web applications using React and TypeScript. I care deeply about
               clean architecture, maintainable code, and intuitive user
               interfaces.
             </p>
-            <p className="text-xl text-muted-foreground leading-relaxed">
+            <p className="text-2xl text-muted-foreground leading-relaxed">
               Currently, I’m strengthening my expertise in API integration,
               performance optimization, and modern frontend workflows while
               continuously improving my engineering depth.
             </p>
             <div className="flex flex-wrap gap-4 pt-4 justify-start">
-              <a href="#contact" className="btn rounded-md font-semibold">
+              <a
+                href="#contact"
+                className="btn rounded-md  text-lg font-semibold"
+              >
                 Contact Me
               </a>
-              <a href="#contact" className="btn rounded-md font-semibold">
+              <a
+                href={resume}
+                target="_blank"
+                className="btn rounded-md text-lg font-semibold"
+              >
                 Resume
               </a>
             </div>

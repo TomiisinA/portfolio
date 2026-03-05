@@ -19,9 +19,9 @@ export const Hero = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="text-4xl md:text-7xl font-bold tracking-tight leading-tight"
+            className="text-4xl md:text-8xl font-bold tracking-tight leading-tight"
           >
-            <span className="block text-muted-foreground text-xl md:text-2xl mb-2">
+            <span className="block text-muted-foreground text-xl md:text-3xl mb-2">
               Hi, I’m
             </span>
             <span className="block bg-linear-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
@@ -32,7 +32,7 @@ export const Hero = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="text-lg md:text-xl text-muted-foreground/90 max-w-2xl mx-auto animate-fadeInUp animation-delay-500"
+            className="text-lg md:text-2xl text-muted-foreground/90 max-w-2xl mx-auto animate-fadeInUp animation-delay-500"
           >
             Frontend Developer specializing in React and TypeScript. I build
             scalable, responsive interfaces with clean architecture.

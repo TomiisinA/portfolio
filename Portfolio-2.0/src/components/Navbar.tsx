@@ -1,6 +1,7 @@
 import { Icon } from "@iconify/react";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
+import resume from "../../public/Oluwatomisin Ajayi CV (1).pdf";
 
 
 const navItems = [
@@ -8,10 +9,9 @@ const navItems = [
   //   name: "Home",
   //   href: "#hero",
   // },
-  { name: "Projects", href: "#projects" },
   { name: "About", href: "#about" },
-  { name: "Resume", href: "#skills" },
-
+  { name: "Projects", href: "#projects" },
+  { name: "Resume", href: resume },
   { name: "Contact", href: "#contact" },
 ];
 
