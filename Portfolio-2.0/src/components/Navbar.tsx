@@ -1,7 +1,7 @@
 import { Icon } from "@iconify/react";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
-import resume from "../../public/Oluwatomisin Ajayi CV (1).pdf";
+import resume from "../assets/Oluwatomisin Ajayi CV (1).pdf";
 
 
 const navItems = [

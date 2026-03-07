@@ -1,5 +1,6 @@
 import image from "../assets/images/Myprofile.png";
-import resume from "../../public/Oluwatomisin Ajayi CV (1).pdf";
+import resume from "../assets/Oluwatomisin Ajayi CV (1).pdf";
+
 
 export const About = () => {
   return (
