@@ -19,7 +19,7 @@ export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [active, setActive] = useState("home");
+  const [active, setActive] = useState("");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -39,12 +39,6 @@ export const Navbar = () => {
         }`}
       >
         <a href="#hero" className="text-xl font-bold flex items-center">
-          {/* <span className="relative z-10">
-            <span className="font-bold text-xl text-foreground text-[#e6e3e3] ">
-              Oluwatomisin
-            </span>{" "}
-            Ajayi
-          </span> */}
 
           <Icon icon="ic:baseline-home" width="24" height="24" />
         </a>

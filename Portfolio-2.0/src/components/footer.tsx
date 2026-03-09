@@ -1,12 +1,22 @@
 import { Icon } from "@iconify/react";
+import { motion } from "framer-motion";
 
 export const Footer = () => {
   return (
-    <section id="contact" className="py-24 px-4">
-      <div className="container mx-auto max-w-6xl text-center">
-        <h2 className="text-4xl md:text-5xl font-bold mb-6">Get In Touch</h2>
+    <section id="contact" className="mb-16 px-4">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.0 }}
+        viewport={{ once: true }}
+        className="container mx-auto max-w-6xl "
+      >
+        <h2 className="text-5xl md:text-6xl font-bold mb-4">
+          {" "}
+          Interested in working together?
+        </h2>
 
-        <p className="text-muted-foreground max-w-xl text-lg mx-auto mb-12">
+        <p className="text-muted-foreground  text-xl mx-auto mb-3">
           I'm currently open to frontend developer roles, collaborations, and
           interesting projects. Feel free to reach out.
         </p>
@@ -18,12 +28,11 @@ export const Footer = () => {
 
           <a
             href="mailto:tomisinajayi@gmail.com"
-            className="flex items-center gap-4 p-6 rounded-sm  hover:border-primary/50 transition"
+            className="flex items-center gap-4 p-2 rounded-sm  hover:border-primary/50 transition"
           >
             <Icon icon="material-symbols:mail-outline" width="30" />
 
             <div className="text-left">
-          
               <p className="text-2xl text-muted-foreground">
                 tomisinajayi@gmail.com
               </p>
@@ -36,12 +45,11 @@ export const Footer = () => {
             href="https://www.linkedin.com/in/ajayi-oluwatomisin/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-4 p-6 rounded-sm hover:border-primary/50 transition"
+            className="flex items-center gap-4 p-2 rounded-sm hover:border-primary/50 transition"
           >
             <Icon icon="mdi:linkedin" width="30" />
 
             <div className="text-left">
-            
               <p className="text-2xl text-muted-foreground">
                 Ajayi Oluwatomisin
               </p>
@@ -54,12 +62,11 @@ export const Footer = () => {
             href="https://github.com/TomiisinA"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-4 p-6  hover:border-primary/50 transition"
+            className="flex items-center gap-4 p-2  hover:border-primary/50 transition"
           >
             <Icon icon="mdi:github" width="30" />
 
             <div className="text-left">
-             
               <p className="text-2xl text-muted-foreground">
                 github.com/TomiisinA
               </p>
@@ -69,10 +76,10 @@ export const Footer = () => {
 
         {/* Footer */}
 
-        <div className="mt-16 text-sm text-muted-foreground">
+        {/* <div className="mt-16 text-sm text-muted-foreground">
           © {new Date().getFullYear()} Oluwatomisin Ajayi. All rights reserved.
-        </div>
-      </div>
+        </div> */}
+      </motion.div>
     </section>
   );
 };

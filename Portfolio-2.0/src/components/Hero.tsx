@@ -7,7 +7,7 @@ export const Hero = () => {
       id="hero"
       className="relative min-h-screen flex flex-col items-center justify-center px-4"
     >
-      <div className="container max-w-4xl mx-auto z-10  items-center text-center ">
+      <div className="container max-w-7xl mx-auto z-10  items-center text-center ">
         <div className="space-y-6 ">
           {/* <h1 className="text-4xl md:text-7xl font-bold tracking-tight">
             <span> Hi,</span> <br />

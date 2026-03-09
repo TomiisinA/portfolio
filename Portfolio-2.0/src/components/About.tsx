@@ -4,7 +4,7 @@ import resume from "../assets/Oluwatomisin Ajayi CV (1).pdf";
 
 export const About = () => {
   return (
-    <section id="about" className=" relative py-20">
+    <section id="about" className=" relative mb-20">
       <div className="container  mx-auto max-w-6xl ">
         <h2 className="text-4xl md:text-5xl font-bold mb-4">About</h2>
 
