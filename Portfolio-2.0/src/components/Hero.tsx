@@ -5,7 +5,7 @@ export const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-[90vh] flex flex-col items-center justify-center px-4"
+      className="relative min-h-[100vh] flex flex-col items-center justify-center px-4"
     >
       <div className="items-center text-center ">
         <motion.h1
