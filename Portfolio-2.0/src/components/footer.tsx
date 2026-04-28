@@ -9,7 +9,7 @@ export const Footer = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.0 }}
         viewport={{ once: true }}
-        className="container mx-auto max-w-6xl "
+        className="container mx-auto max-w-8xl "
       >
         <h2 className="text-5xl md:text-6xl font-bold mb-4">
           {" "}

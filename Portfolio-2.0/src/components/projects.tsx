@@ -1,7 +1,9 @@
 import task from "../assets/images/task.png";
 import lama from "../assets/images/lama.png";
-import fine from "../assets/images/Screenshot (32).png";
+import pulse from "../assets/images/pulseconnect.png";
 import ajo from "../assets/images/Ajo.png";
+import enugu from "../assets/images/enuguAir.png";
+import rightice from "../assets/images/rightice.png";
 import { ExternalLink, Github } from "lucide-react";
 
 interface Projects {
@@ -17,136 +19,72 @@ interface Projects {
 const projects: Projects[] = [
   {
     id: 1,
+    name: "Pulseconnect",
+    description:
+      "Pulseconnect is a SaaS platform with seven integrated modules to streamline communication, automate workflows, and improve customer experience from a single dashboard.",
+    image: pulse,
+    tags: ["React", "Typescript", "react-query", "SCSS"],
+    link: "https://www.pulseconnect.xyz/",
+    github: "",
+  },
+  {
+    id: 2,
     name: "Ajo Savings",
-    description: "Description",
+    description:
+      "Ajo is a savings app that allows users to create and manage savings groups, set savings goals, and track their progress. It provides a secure and user-friendly platform for individuals to achieve their financial goals.",
     image: ajo,
     tags: ["React", "TailwindCss"],
     link: "https://ajosavings.netlify.app/",
     github: "https://github.com/TomiisinA/Ajo-Savings",
   },
   {
-    id: 2,
+    id: 3,
+    name: "RighticeNG",
+    description:
+      "Rightice.ng is a web application designed to connect individuals in need of legal assistance with verified lawyers across various specialties. Rightice.ng provides a seamless user experience, allowing clients to easily find, consult, and collaborate with legal professionals to resolve their cases efficiently.",
+    image: rightice,
+    tags: ["React", "Next.js"],
+    link: "https://righticeng.netlify.app/",
+    github: "https://github.com/TomiisinA/RighticeNG",
+  },
+  {
+    id: 4,
+    name: "Enugu Air",
+    description:
+      "Enugu Air is an aviation website focused on providing passenger and airline service information with a modern flight-first digital experience.",
+    image: enugu,
+    tags: ["React", "Redux"],
+    link: "https://enuguairlines.com/",
+    github: "",
+  },
+
+  {
+    id: 5,
     name: "Lama Estate",
-    description: "Description ",
+    description:
+      "Lama Estate is a real estate website that provides users with a platform to browse and search for properties, view property details, and contact real estate agents for inquiries.",
     image: lama,
     tags: ["React", "TypeScript", "TailwindCss"],
     link: "https://lamarealestatesite.netlify.app/",
     github: "https://github.com/TomiisinA/Lama-Real-estate",
   },
   {
-    id: 3,
+    id: 6,
     name: "Task Manager",
-    description: "Description",
+    description:
+      "A simple task manager application built with React and Tailwind CSS.",
     image: task,
-    tags: ["React", "Tailwind CSS"],
+    tags: ["React", "Tailwind CSS", "TypeScript", "Redux"],
     link: "https://example.com/project3",
     github: "https://github.com/TomiisinA/ToDo-App",
   },
-  {
-    id: 4,
-    name: "Recipe App",
-    description: "Description ",
-    image: fine,
-    tags: ["React", "Next.js"],
-    link: "https://my-recipe-app-8de03.web.app/",
-    github: "https://github.com/TomiisinA/accordion-app",
-  },
-  // {
-  //   id: 5,
-  //   name: "Project 5",
-  //   description: "Description of project 5",
-  //   image: lama,
-  //   tags: ["React", "GraphQL"],
-  //   link: "https://example.com/project5",
-  //   github: "",
-  // },
-  // {
-  //   id: 6,
-  //   name: "Project 6",
-  //   description: "Description of project 6",
-  //   image: task,
-  //   tags: ["React", "Redux"],
-  //   link: "https://example.com/project6",
-  //   github: "",
-  // },
 ];
-
-// export const Projects = () => {
-//   return (
-//     <section id="projects" className="py-24 px-4 relative">
-//       <div className="container mx-auto max-w-6xl">
-//         <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center">
-//           Projects
-//         </h2>
-//         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-//           {projects.map((project, key) => (
-//             <div
-//               key={key}
-//               className="group border  p-4 rounded-lg overflow-hidden shadow-xs "
-//             >
-//               <div className=" h-48  overflow-hidden">
-//                 <img
-//                   src={project.image}
-//                   alt={project.name}
-//                   className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-//                 />
-//               </div>
-//               <div className="py-3">
-//                 <div className="flex flex-wrap gap-2 mb-4">
-//                   {project.tags.map((tag) => (
-//                     <span
-//                       className="bg-primary text-xs font-medium px-2 py-1 border rounded-sm text-white"
-//                       key={tag}
-//                     >
-//                       {tag}
-//                     </span>
-//                   ))}
-//                 </div>
-//               </div>
-//               <h3 className="text-xl font-bold  mb-1">{project.name}</h3>
-//               <p className=" mb-4 text-sm text-muted-foreground">
-//                 {project.description}
-//               </p>
-//               <div className="flex justify-between items-center">
-//                 <div className="flex space-x-3">
-//                   <div className="flex border rounded-md px-2 py-1 items-center gap-1 bg-primary/10  hover:text-secondary cursor-pointer">
-//                     <p> Live Demo</p>
-//                     <a
-//                       href={project.link}
-//                       target="_blank"
-//                       rel="noopener noreferrer"
-//                       className="cursor "
-//                     >
-//                       <ExternalLink size={20} className="w-4 h-4" />
-//                     </a>
-//                   </div>
-//                   <div className="flex border rounded-md px-2 py-1 items-center gap-1 bg-primary/10 cursor-pointer">
-//                     <p>GitHub</p>
-//                     <a
-//                       href={project.github}
-//                       target="_blank"
-//                       rel="noopener noreferrer"
-//                       className="cursor"
-//                     >
-//                       <Github className="w-5 h-5 hover:text-secondary" />
-//                     </a>{" "}
-//                   </div>
-//                 </div>
-//               </div>
-//             </div>
-//           ))}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
 
 
 export const Projects = () => {
   return (
     <section id="projects" className="py-24 px-4">
-      <div className="container max-w-6xl mx-auto">
+      <div className="container max-w-9xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
           Projects
         </h2>
@@ -194,7 +132,7 @@ export const Projects = () => {
                 </p>
 
                 {/* Tags */}
-                <div className="flex flex-wrap gap-2">
+                {/* <div className="flex flex-wrap gap-2">
                   {item.tags.map((tag) => (
                     <span
                       key={tag}
@@ -203,7 +141,7 @@ export const Projects = () => {
                       {tag}
                     </span>
                   ))}
-                </div>
+                </div> */}
               </div>
             </div>
           ))}

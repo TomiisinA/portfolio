@@ -34,7 +34,7 @@ const skillData: SkillCategory[] = [
 export const Skills = () => {
   return (
     <section id="skills" className="py-24 px-4 relative">
-      <div className="container max-w-7xl mx-auto">
+      <div className="container max-w-8xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center">
           Skills & Tools
         </h2>
