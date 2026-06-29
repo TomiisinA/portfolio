@@ -83,13 +83,13 @@ const projects: Projects[] = [
 
 export const Projects = () => {
   return (
-    <section id="projects" className="py-24 px-4">
+    <section id="projects" className="py-20 px-4">
       <div className="container max-w-9xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
           Projects
         </h2>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-10">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
           {projects.map((item) => (
             <div
               key={item.id}

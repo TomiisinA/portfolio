@@ -9,9 +9,9 @@ export const About = () => {
           Frontend Developer
         </h2> */}
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-center justify-between ">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center justify-between ">
           {/* left side */}
-          <div className="text-left ">
+          <div className="text-left ps-8">
             <p className="text-xl text-muted-foreground  text-justify ">
               I’m a frontend developer focused on building scalable, responsive
               web applications. I care deeply about clean architecture,
