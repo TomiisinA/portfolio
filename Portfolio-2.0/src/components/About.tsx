@@ -12,32 +12,30 @@ export const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center justify-between ">
           {/* left side */}
           <div className="text-left ps-8">
-            <p className="text-xl text-muted-foreground  text-justify ">
-              I’m a frontend developer focused on building scalable, responsive
-              web applications. I care deeply about clean architecture,
-              maintainable code, and intuitive user interfaces.
-            </p>
-            <br />
-            <p className="text-xl text-muted-foreground text-justify ">
-              With a commitment to continuous learning, I stay updated on
-              industry trends to leverage the latest technologies and best
-              practices. My focus on writing clean, maintainable code and
-              following agile methodologies ensures efficient and effective
-              project delivery.
+            <p className="text-xl text-muted-foreground text-justify">
+              I'm a Frontend Developer focused on building thoughtful, reliable
+              digital experiences. My work involves turning product ideas and
+              designs into responsive, accessible, and maintainable
+              interfaces.
             </p>
             <br />
             <p className="text-xl text-muted-foreground text-justify">
-              I am eager to contribute to dynamic teams, bring fresh
-              perspectives to frontend development challenges, and create
-              impactful digital experiences. Feel free to reach out if you will
-              like to discuss web development, industry trends, or potential
-              collaboration opportunities!
+              I have experience working with React, TypeScript, REST APIs,
+              application state management, and modern frontend
+              technologies&mdash;building interfaces that hold up in
+              production, not just in a demo.
+            </p>
+            <br />
+            <p className="text-xl text-muted-foreground text-justify">
+              I enjoy working on products that solve real problems, from SaaS
+              platforms and custom web applications to ecommerce experiences
+              and business websites.
             </p>
 
             <div className="flex flex-wrap gap-4 pt-4 justify-start">
               <a
                 href="#contact"
-                className="btn rounded-sm  text-lg font-semibold"
+                className="btn rounded-sm text-lg font-semibold"
               >
                 Contact Me
               </a>
@@ -45,7 +43,7 @@ export const About = () => {
                 href={resume}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn rounded-sm text-lg font-semibold"
+                className="btn-outline rounded-sm text-lg font-semibold"
               >
                 View Resume
               </a>
