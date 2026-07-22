@@ -40,10 +40,10 @@ export const Skills = () => {
         </h2>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
-          {skillData.flatMap(category => category.skills).map((skill, index) => (
+          {skillData.flatMap(category => category.skills).map((skill) => (
             <div
-              key={index}
-              className="flex flex-col items-center justify-center p-6 rounded-xl bg-white/5 hover:bg-white/10 transition group"
+              key={skill.name}
+              className="flex flex-col items-center justify-center p-6 rounded-xl bg-foreground/5 hover:bg-foreground/10 transition group"
             >
               <Icon
                 icon={skill.icon}

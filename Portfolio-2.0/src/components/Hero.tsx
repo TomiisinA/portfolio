@@ -5,7 +5,7 @@ export const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative min-h-[100vh] flex flex-col items-center justify-center px-4"
+      className="relative min-h-screen flex flex-col items-center justify-center px-4"
     >
       <div className="items-center text-center ">
         <motion.h1
@@ -35,14 +35,24 @@ export const Hero = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className=" gap-4 flex justify-center animate-fadeInUp animation-delay-1000 mb-0 pt-4"
         >
-          <a href="http://">
+          <a
+            href="https://www.linkedin.com/in/ajayi-oluwatomisin/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
             <Icon icon="mdi:linkedin" width="35" height="35" />
           </a>
-          <a href="">
+          <a
+            href="https://github.com/TomiisinA"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
             {" "}
             <Icon icon="mdi:github" width="35" height="35" />
           </a>
-          <a href="">
+          <a href="mailto:tomisinajayi@gmail.com" aria-label="Email">
             <Icon icon="material-symbols:mail-outline" width="35" height="35" />
           </a>
         </motion.div>

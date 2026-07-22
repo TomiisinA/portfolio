@@ -48,6 +48,22 @@
     color: var(--foreground);
     background-color: var(--background);
   }
+
+  :focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
 }
 
 @utility container {
@@ -68,6 +84,14 @@
   @media (width >= 1280px) {
     max-width: 1280px;
   }
+}
+
+@utility max-w-8xl {
+  max-width: 88rem;
+}
+
+@utility max-w-9xl {
+  max-width: 96rem;
 }
 
 @utility card {

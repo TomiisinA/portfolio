@@ -1,5 +1,5 @@
 import image from "../assets/images/Myprofile.png";
-import resume from "../assets/Oluwatomisin Ajayi CV (1).pdf";
+import resume from "../assets/Oluwatomisin-Ajayi-CV.pdf";
 
 export const About = () => {
   return (
@@ -44,6 +44,7 @@ export const About = () => {
               <a
                 href={resume}
                 target="_blank"
+                rel="noopener noreferrer"
                 className="btn rounded-sm text-lg font-semibold"
               >
                 View Resume
@@ -57,6 +58,9 @@ export const About = () => {
             <img
               src={image}
               alt="Oluwatomisin Ajayi"
+              width={896}
+              height={1195}
+              loading="lazy"
               className="w-full max-w-md md:max-w-xs rounded-2xl object-cover"
             />
           </div>

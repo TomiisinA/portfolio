@@ -2,9 +2,51 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>porfolio-2-0</title>
+    <title>Oluwatomisin Ajayi — Frontend Developer</title>
+    <meta
+      name="description"
+      content="Oluwatomisin Ajayi is a frontend developer building scalable, production-grade interfaces with React, TypeScript, and clean architecture."
+    />
+    <link rel="canonical" href="https://oluwatomisinajayi.netlify.app/" />
+
+    <meta property="og:title" content="Oluwatomisin Ajayi — Frontend Developer" />
+    <meta
+      property="og:description"
+      content="Oluwatomisin Ajayi is a frontend developer building scalable, production-grade interfaces with React, TypeScript, and clean architecture."
+    />
+    <meta property="og:image" content="https://oluwatomisinajayi.netlify.app/favicon.png" />
+    <meta property="og:url" content="https://oluwatomisinajayi.netlify.app/" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Oluwatomisin Ajayi — Frontend Developer" />
+    <meta
+      name="twitter:description"
+      content="Oluwatomisin Ajayi is a frontend developer building scalable, production-grade interfaces with React, TypeScript, and clean architecture."
+    />
+    <meta name="twitter:image" content="https://oluwatomisinajayi.netlify.app/favicon.png" />
+
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0f1418" media="(prefers-color-scheme: dark)" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      (function () {
+        var stored = localStorage.getItem("theme");
+        var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        if (stored === "dark" || (!stored && prefersDark)) {
+          document.documentElement.classList.add("dark");
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

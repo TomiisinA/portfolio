@@ -4,6 +4,7 @@ import { Hero } from "../components/Hero"
 import { Navbar } from "../components/Navbar"
 import  { Projects } from "../components/projects"
 import { Skills } from "../components/Skills"
+import { ThemeToggle } from "../components/ThemeToggle"
 
 
 
@@ -11,7 +12,7 @@ export const Home = () => {
   return (
     <div className="min-h-screen overflow-x-hidden scroll-smooth ">
       {/* Toggle */}
-      {/* <ThemeToggle/> */}
+      <ThemeToggle/>
 
       {/* Navbar */}
       <Navbar />
