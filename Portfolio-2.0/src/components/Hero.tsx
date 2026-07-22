@@ -93,7 +93,8 @@ export const Hero = () => {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75" />
             <span className="relative inline-flex rounded-full h-2 w-2 bg-primary" />
           </span>
-          Available for select projects
+          Available 
+          
         </motion.div>
 
         <motion.div
